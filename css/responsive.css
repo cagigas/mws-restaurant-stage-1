@@ -1,0 +1,22 @@
+@media screen and (max-width: 549px) {
+ #maincontent #map-container {
+	 order: 0;
+	 width: 90%;
+	 height: 200px;
+ }
+ #maincontent #restaurant-container-left {
+	 order: 1;
+	 width: 90%;
+ }
+}
+@media screen and (min-width: 550px) {
+	#maincontent #map-container {
+	 order: 1;
+	 width: 50%;
+	 /*height: 85vh;*/
+ }
+ #maincontent #restaurant-container-left {
+	 order: 0;
+	 width: 50%;
+ }
+}
