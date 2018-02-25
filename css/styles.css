@@ -231,6 +231,43 @@ nav h1 a {
   font-size: 12pt;
   margin: 10px 0px;
 }
+#restaurants-list {
+  background-color: #f3f3f3;
+  list-style: outside none none;
+  margin: 0;
+	padding: 10px 20px 10px;
+  text-align: center;
+}
+#restaurant-rating {
+  border-radius: 5px;
+  border: 2px solid #000000;
+  color: white;
+  margin: 0;
+  background-color: #7e7e7e;
+	padding: 5px;
+  display:inline-block;
+}
+#restaurant-basic-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#restaurant-basic-nav p {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+#restaurant-basic-nav #restaurant-date{
+    float: right;
+}
+
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
@@ -259,18 +296,18 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #D3D3D3;
-  border: 2px solid #BDBDBD;
-	border-radius: 25px;
+  border: 2px solid #000000;
+	border-radius: 25px 5px 25px 5px;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 20px;
+  padding: 0px;
   position: relative;
   width: 85%;
 }
 #reviews-list li p {
-  margin: 0 0 10px;
+  margin: 10px;
 }
 #restaurant-hours td {
   color: #666;
