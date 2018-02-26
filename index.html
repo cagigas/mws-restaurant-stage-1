@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -14,14 +14,11 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/" >Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
-    <section id="map-container">
-      <div id="map"></div>
-    </section>
+  <main id="maincontent" role="main">
     <section id="restaurant-container-left">
       <div class="filter-options">
         <h2>Filter Results</h2>
@@ -33,6 +30,9 @@
         </select>
       </div>
       <ul id="restaurants-list"></ul>
+    </section>
+    <section id="map-container">
+      <div id="map" role="presentation" aria-hidden="true"></div>
     </section>
   </main>
   <!-- Service Worker Registration -->

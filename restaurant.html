@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -18,7 +18,7 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
+    <nav aria-label="breadcrumb" role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
@@ -31,28 +31,29 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map"></div>
-    </section>
-    <!-- End map -->
+  <main id="maincontent" role="main">
     <section id="restaurant-container-left">
       <!-- Beginning restaurant -->
       <section id="restaurant-container">
-        <h1 id="restaurant-name"></h1>
+        <h1 tabindex='0' id="restaurant-name"></h1>
         <img id="restaurant-img">
         <p id="restaurant-cuisine"></p>
-        <p id="restaurant-address"></p>
-        <table id="restaurant-hours"></table>
+        <p tabindex='0' id="restaurant-address"></p>
+        <table tabindex='0' id="restaurant-hours"></table>
       </section>
       <!-- end restaurant -->
       <!-- Beginning reviews -->
       <section id="reviews-container">
-        <ul id="reviews-list"></ul>
+        <ul tabindex='0' id="reviews-list"></ul>
       </section>
       <!-- End reviews -->
     </section>
+    <!-- Beginning map -->
+    <section id="map-container">
+      <div id="map" role="presentation" aria-hidden="true"></div>
+    </section>
+    <!-- End map -->
+
   </main>
   <!-- End main -->
 
@@ -63,6 +64,8 @@
   <!-- End footer -->
 
   <!-- Beginning scripts -->
+  <!-- Service Worker Registration -->
+  <script type="application/javascript" charset="utf-8" src="js/IndexController.js"></script>
   <!-- Database helpers -->
   <script type="text/javascript" src="js/dbhelper.js"></script>
   <!-- Main javascript file -->
