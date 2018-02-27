@@ -1,5 +1,5 @@
 
-var CACHE_NAME = 'restaurant-cache-39';
+var CACHE_NAME = 'restaurant-cache-42';
 
 self.addEventListener('install', function (event) {
   // Perform install steps

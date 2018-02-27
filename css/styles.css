@@ -66,6 +66,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 /* ====================== Navigation ====================== */
 nav {
+  position: fixed;
   width: 100%;
   height: 80px;
   background-color: #252831;
@@ -89,6 +90,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
+    text-align: left;
 }
 
 /* Display list items side by side */
@@ -124,6 +126,10 @@ nav h1 a {
 
 #maincontent #map-container {
   /*height: 400px;*/
+    position: fixed;
+  /* overflow: hidden; */
+  top: 80px;
+  right: 0;
   width: 100%;
   background-color: #ccc;
 }
@@ -135,6 +141,7 @@ nav h1 a {
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
+  margin-top: 80px;
 	padding: 10px;
   background-color: #3397DB;
   align-items: center;
@@ -282,7 +289,6 @@ nav h1 a {
   text-transform: uppercase;
 }
 #restaurant-container, #reviews-container {
-	width: calc(100% - 66px);
 	padding: 20px;
 }
 #reviews-container h2 {
@@ -305,8 +311,6 @@ nav h1 a {
   margin: 0 0 30px;
   overflow: hidden;
   padding: 0px;
-  position: relative;
-  width: 85%;
 }
 #reviews-list li p {
   margin: 10px;
