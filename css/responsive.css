@@ -7,7 +7,8 @@
  #maincontent #restaurant-container-left {
 	 order: 1;
    width: 100%;
-   margin-top: 200px;
+   margin-top: 280px;
+   min-height: 556px;
  }
 }
 @media screen and (min-width: 550px) and (max-width: 767px) {
@@ -19,8 +20,8 @@
  #maincontent #restaurant-container-left {
 	 order: 1;
    width: 100%;
-   margin-top: 200px;
-
+   margin-top: 280px;
+   min-height: 556px;
  }
  #restaurants-list li{
    width: calc(50% - 64px);
@@ -31,11 +32,13 @@
 	#maincontent #map-container {
 	 order: 1;
 	 width: 50%;
-	 height: 85%;
+   height: calc(100% - 142.73px);
  }
  #maincontent #restaurant-container-left {
 	 order: 0;
 	 width: 50%;
+   margin-top: 80px;
+   min-height: 758px;
  }
  #restaurants-list li{
    width: calc(100% - 64px);
@@ -46,11 +49,13 @@
 	#maincontent #map-container {
 	 order: 1;
 	 width: 50%;
-	 height: 85%;
+	 height: calc(100% - 142.73px);
  }
  #maincontent #restaurant-container-left {
 	 order: 0;
 	 width: 50%;
+   margin-top: 80px;
+   min-height: 758px;
  }
  #restaurants-list li{
    width: calc(50% - 64px);
@@ -60,11 +65,13 @@
 	#maincontent #map-container {
 	 order: 1;
 	 width: 50%;
-	 height: 85%;
+   height: calc(100% - 142.73px);
  }
  #maincontent #restaurant-container-left {
 	 order: 0;
 	 width: 50%;
+   margin-top: 80px;
+   min-height: 758px;
  }
  #restaurants-list li{
    width: calc(33.3% - 64px);
