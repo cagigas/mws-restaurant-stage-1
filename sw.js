@@ -1,4 +1,3 @@
-
 var CACHE_NAME = 'restaurant-cache-46';
 
 self.addEventListener('install', function (event) {
